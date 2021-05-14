@@ -3,7 +3,7 @@ let today = DateTime.local()
 let currentDay = document.getElementById("currentDay")
 let daySuffix;
 let dayToString = today.day.toString();
-let saveBtn = document.querySelector(".saveBtn")
+let saveBtn = document.querySelectorAll(".saveBtn")
 
 // luxon durations 
 let hourDur = luxon.Duration.fromMillis(3600000)
@@ -26,26 +26,18 @@ if (dayToString.endsWith("1")) {
 // display the current day in the currendDay p
 currentDay.innerText = today.weekdayLong + ", " + today.monthLong + " " + today.day + daySuffix;
 
-function renderTask() {
-  let testArea = document.querySelector(".testarea")
 
-  let task2 =  localStorage.getItem("task")
-  testArea.textContent = task2;
-}
+
 
 
 // save to localStorage with save button 
-saveBtn.addEventListener("click", function() {
-  let task = document.querySelector(".description").value
 
-localStorage.setItem("task", task);
-renderTask()
-
-})
 
 
 // when you start up the page, renderLastGrade. And renderLastGrade is :
 // get out of local storage , parse as JSONobject,  set HTML based on whatever's in that object
+
+var hour9 = document.getElementById("hour9");
 
 
 function saveWorkdaySchedule() {
@@ -66,15 +58,63 @@ function saveWorkdaySchedule() {
 }
 
 
+
 function renderWorkdaySchedule() {
   // Use JSON.parse() to convert text to JavaScript object
   var lastSchedule = JSON.parse(localStorage.getItem("workdaySchedule"));
   // Check if data is returned, if not exit out of the function
   if (lastSchedule !== null) {
-    document.getElementById("saved-name").innerHTML = workdaySchedule.student;
-    document.getElementById("saved-grade").innerHTML = workdaySchedule.grade;
-    document.getElementById("saved-comment").innerHTML = workdaySchedule.comment;
+    document.getElementById("hour9").innerHTML = lastSchedule.hour9;
+    document.getElementById("hour10").innerHTML = lastSchedule.hour10;
+    document.getElementById("hour11").innerHTML = lastSchedule.hour11;
+    document.getElementById("hour12").innerHTML = lastSchedule.hour12;
+    document.getElementById("hour1").innerHTML = lastSchedule.hour1;
+    document.getElementById("hour2").innerHTML = lastSchedule.hour2;
+    document.getElementById("hour3").innerHTML = lastSchedule.hour3;
+    document.getElementById("hour4").innerHTML = lastSchedule.hour4;
+    document.getElementById("hour5").innerHTML = lastSchedule.hour5;
   } else {
     return;
   }
 }
+
+// event listeners on each button save the workdaySchedule object
+saveBtn[0].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[1].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[2].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[3].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[4].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[5].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[6].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[7].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+saveBtn[8].addEventListener("click", function (event) { 
+  event.preventDefault();
+  saveWorkdaySchedule();
+})
+
+// load the most recent schedule
+renderWorkdaySchedule()
