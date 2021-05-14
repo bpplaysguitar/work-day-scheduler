@@ -4,13 +4,39 @@ let currentDay = document.getElementById("currentDay")
 let daySuffix;
 let dayToString = today.day.toString();
 let saveBtn = document.querySelectorAll(".saveBtn")
+let row9 = document.getElementById("row9")
+let row10 = document.getElementById("row10")
+let row11 = document.getElementById("row11")
+let row12 = document.getElementById("row12")
+let row1 = document.getElementById("row1")
+let row2 = document.getElementById("row2")
+let row3 = document.getElementById("row3")
+let row4 = document.getElementById("row4")
+let row5 = document.getElementById("row5")
 
-// luxon durations 
-let hourDur = luxon.Duration.fromMillis(3600000)
+// each amount of hours equals its respective milliseconds
+let hourDur9 = luxon.Duration.fromMillis(32400000);
+let hourDur10 = luxon.Duration.fromMillis(36000000);
+let hourDur11 = luxon.Duration.fromMillis(39600000);
+let hourDur12 = luxon.Duration.fromMillis(43200000);
+let hourDur13 = luxon.Duration.fromMillis(46800000);
+let hourDur14 = luxon.Duration.fromMillis(50400000);
+let hourDur15 = luxon.Duration.fromMillis(54000000);
+let hourDur16 = luxon.Duration.fromMillis(57600000);
+let hourDur17 = luxon.Duration.fromMillis(61200000);
+let hourDur18 = luxon.Duration.fromMillis(64800000);
 
-let minDur = luxon.Duration.fromMillis(60000)
-
-console.log(hourDur / minDur);
+// each time equals midnight plus the correct amount of milliseconds from above variables
+let nineAm = today.startOf('day') + hourDur9
+let tenAm = today.startOf('day') + hourDur10
+let elevenAm = today.startOf('day') + hourDur11
+let twelvePm = today.startOf('day') + hourDur12
+let onePm = today.startOf('day') + hourDur13
+let twoPm = today.startOf('day') + hourDur14
+let threePm = today.startOf('day') + hourDur15
+let fourPm = today.startOf('day') + hourDur16
+let fivePm = today.startOf('day') + hourDur17
+let sixPm = today.startOf('day') + hourDur18
 
 // determine which suffix to use
 if (dayToString.endsWith("1")) {
@@ -27,18 +53,83 @@ if (dayToString.endsWith("1")) {
 currentDay.innerText = today.weekdayLong + ", " + today.monthLong + " " + today.day + daySuffix;
 
 
+// determine whether each row is in the past, present, or future, and add appropriate class 
+function setTimeBlockColor() {
+let currentTime = today.ts;
+// 9am
+if ((currentTime >= tenAm)) {
+  row9.classList.add("past");
+} else if ((currentTime >= nineAm) && (currentTime < tenAm)) {
+  row9.classList.add("present");
+} else {
+  row9.classList.add("future");
+}
+// 10am
+if ((currentTime >= elevenAm)) {
+  row10.classList.add("past");
+} else if ((currentTime >= tenAm) && (currentTime < elevenAm)) {
+  row10.classList.add("present");
+} else {
+  row10.classList.add("future");
+}
+// 11am
+if ((currentTime >= twelvePm)) {
+  row11.classList.add("past");
+} else if ((currentTime >= elevenAm) && (currentTime < twelvePm)) {
+  row11.classList.add("present");
+} else {
+  row11.classList.add("future");
+}
+// 12pm
+if ((currentTime >= onePm)) {
+  row12.classList.add("past");
+} else if ((currentTime >= twelvePm) && (currentTime < onePm)) {
+  row12.classList.add("present");
+} else {
+  row12.classList.add("future");
+}
+// 1pm
+if ((currentTime >= twoPm)) {
+  row1.classList.add("past");
+} else if ((currentTime >= onePm) && (currentTime < twoPm)) {
+  row1.classList.add("present");
+} else {
+  row1.classList.add("future");
+}
+// 2pm
+if ((currentTime >= threePm)) {
+  row2.classList.add("past");
+} else if ((currentTime >= twoPm) && (currentTime < threePm)) {
+  row2.classList.add("present");
+} else {
+  row2.classList.add("future");
+}
+// 3pm
+if ((currentTime >= fourPm)) {
+  row3.classList.add("past");
+} else if ((currentTime >= threePm) && (currentTime < fourPm)) {
+  row3.classList.add("present");
+} else {
+  row3.classList.add("future");
+}
+// 4pm
+if ((currentTime >= fivePm)) {
+  row4.classList.add("past");
+} else if ((currentTime >= fourPm) && (currentTime < fivePm)) {
+  row4.classList.add("present");
+} else {
+  row4.classList.add("future");
+}
+// 5pm
+if ((currentTime >= fivePm)) {
+  row5.classList.add("past");
+} else if ((currentTime >= fivePm) && (currentTime < sixPm)) {
+  row5.classList.add("present");
+} else {
+  row5.classList.add("future");
+}
 
-
-
-// save to localStorage with save button 
-
-
-
-// when you start up the page, renderLastGrade. And renderLastGrade is :
-// get out of local storage , parse as JSONobject,  set HTML based on whatever's in that object
-
-var hour9 = document.getElementById("hour9");
-
+}
 
 function saveWorkdaySchedule() {
   // Save related form data as an object
@@ -78,6 +169,11 @@ function renderWorkdaySchedule() {
   }
 }
 
+// load the most recent schedule, time block color
+renderWorkdaySchedule()
+setTimeBlockColor()
+
+
 // event listeners on each button save the workdaySchedule object
 saveBtn[0].addEventListener("click", function (event) { 
   event.preventDefault();
@@ -115,6 +211,3 @@ saveBtn[8].addEventListener("click", function (event) {
   event.preventDefault();
   saveWorkdaySchedule();
 })
-
-// load the most recent schedule
-renderWorkdaySchedule()
