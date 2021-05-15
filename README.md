@@ -19,6 +19,21 @@ https://bpplaysguitar.github.io/workday-scheduler/
 
 ![GitHub repo stars](https://img.shields.io/github/stars/bpplaysguitar/workday-scheduler?color=8B00FF&logo=GitHub&logoColor=8B00FF&style=for-the-badge)
 
+
+![GitHub code size](https://img.shields.io/github/languages/code-size/bpplaysguitar/workday-scheduler?color=FF0000&logo=GitHub&logoColor=FF0000&style=for-the-badge)
+
+![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=FF7F00&logo=GitHub&logoColor=FF7F00&style=for-the-badge)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/bpplaysguitar/workday-scheduler?color=FFFF00&logo=GitHub&logoColor=FFFF00&style=for-the-badge)
+
+![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=00FF00&logo=GitHub&logoColor=00FF00&style=for-the-badge)
+
+![GitHub language count](https://img.shields.io/github/languages/count/bpplaysguitar/workday-scheduler?color=0000FF&logo=GitHub&logoColor=0000FF&style=for-the-badge)
+
+![GitHub license](https://img.shields.io/github/license/bpplaysguitar/workday-scheduler?color=2E2B5F&logo=GitHub&logoColor=2E2B5F&style=for-the-badge)
+
+![GitHub repo stars](https://img.shields.io/github/stars/bpplaysguitar/workday-scheduler?color=8B00FF&logo=GitHub&logoColor=8B00FF&style=for-the-badge)
+
 ## Description
 This workday scheduler taught me how tricky it can be to learn to use local storage, but how useful it is once I got the hang of it. I can see a many places where I'd want to utilize this. It was also my first time working with Luxon for time, and that is a neat tool as well. I wasn't aware anything like that even existed. Also quite powerful and I'm sure I have not even scratched its surface. It was nice to see how a couple new tools could come together to build something so familiar and seemingly simple.
 
