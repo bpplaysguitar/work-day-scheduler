@@ -5,11 +5,13 @@ A scheduling web application for keeping track of events throughout the day
 See the project live here:
 https://bpplaysguitar.github.io/workday-scheduler/
 
-![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=%23FA2EF7&logo=GitHub&logoColor=%FF0000)
+![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=%23ff0000&logo=GitHub&logoColor=%23FF0000&style=for-the-badge)
 
-![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=%23ffb3ba&logo=GitHub&logoColor=%23ffb3ba)
+![GitHub license](https://img.shields.io/github/license/bpplaysguitar/workday-scheduler?color=FF7F00&logo=GitHub&logoColor=FF7F00&style=for-the-badge)
 
-![GitHub](https://img.shields.io/github/license/bpplaysguitar/workday-scheduler?color=%23ffffba&logo=GitHub&logoColor=%23ffffba)
+![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=FFFF00&logo=GitHub&logoColor=FFFF00&style=for-the-badge)
+
+![GitHub language count](https://img.shields.io/github/languages/count/bpplaysguitar/workday-scheduler?color=00FF00&logo=GitHub&logoColor=00FF00&style=for-the-badge)
 
 ## Description
 This workday scheduler taught me how tricky it can be to learn to use local storage, but how useful it is once I got the hang of it. I can see a many places where I'd want to utilize this. It was also my first time working with Luxon for time, and that is a neat tool as well. I wasn't aware anything like that even existed. Also quite powerful and I'm sure I have not even scratched its surface. It was nice to see how a couple new tools could come together to build something so familiar and seemingly simple.
