@@ -1,6 +1,5 @@
 # workday-scheduler
 
-Workday Scheduler
 A scheduling web application for keeping track of events throughout the day
 
 See the project live here:
