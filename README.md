@@ -11,7 +11,7 @@ https://bpplaysguitar.github.io/workday-scheduler/
 ![GitHub](https://img.shields.io/github/license/bpplaysguitar/workday-scheduler?color=%23ffffba&logo=GitHub&logoColor=%23ffffba)
 
 ## Description
-WORKDAY SCHEDULER
+This workday scheduler taught me how tricky it can be to learn to use local storage, but how useful it is once I got the hang of it. I can see a many places where I'd want to utilize this. It was also my first time working with Luxon for time, and that is a neat tool as well. I wasn't aware anything like that even existed. Also quite powerful and I'm sure I have not even scratched its surface. It was nice to see how a couple new tools could come together to build something so familiar and seemingly simple.
 
 
 ## Installation
