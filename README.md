@@ -36,7 +36,7 @@ Screenshot image of the project web page
 
 ## Credits
 
-Profssional README guide template provided by Coding Boot Camp. https://github.com/coding-boot-camp
+Professional README guide template provided by Coding Boot Camp. https://github.com/coding-boot-camp
 
 ## License
 

@@ -38,16 +38,19 @@ let fourPm = today.startOf("day") + hourDur16;
 let fivePm = today.startOf("day") + hourDur17;
 let sixPm = today.startOf("day") + hourDur18;
 
+
+
 // determine which suffix to use on day
-if (dayToString.endsWith("1")) {
+if ((dayToString.endsWith("1")) && (!dayToString.endsWith("11"))) {
   daySuffix = "st";
-} else if (dayToString.endsWith("2")) {
+} else if ((dayToString.endsWith("2") && (!dayToString.endsWith("12")))) {
   daySuffix = "nd";
-} else if (dayToString.endsWith("3")) {
+} else if ((dayToString.endsWith("3")) && (!dayToString.endsWith("13"))) {
   daySuffix = "rd";
 } else {
   daySuffix = "th";
 }
+
 
 // display the current day in the currendDay p
 currentDay.innerText =
