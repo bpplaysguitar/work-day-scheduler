@@ -7,7 +7,7 @@ box-sizing: border-box;
 :root { 
   --body:#37475a;
   --past:#131a22;
-  --present:hsl(0, 0%, 55%);
+  --present:hsl(0, 0%, 60%);
   --future:#37475a;
   --hour:#febd69;
   --save-btn:#febd69;
@@ -81,6 +81,7 @@ textarea {
   border: none;
   font-size: 1.25rem;
   color: #fff;
+  font-weight: 600;
 }
 
 .description {
