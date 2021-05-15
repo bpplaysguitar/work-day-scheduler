@@ -5,21 +5,6 @@ A scheduling web application for keeping track of events throughout the day
 See the project live here:
 https://bpplaysguitar.github.io/workday-scheduler/
 
-![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=%23ff0000&logo=GitHub&logoColor=%23FF0000&style=for-the-badge)
-
-![GitHub license](https://img.shields.io/github/license/bpplaysguitar/workday-scheduler?color=FF7F00&logo=GitHub&logoColor=FF7F00&style=for-the-badge)
-
-![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=FFFF00&logo=GitHub&logoColor=FFFF00&style=for-the-badge)
-
-![GitHub language count](https://img.shields.io/github/languages/count/bpplaysguitar/workday-scheduler?color=00FF00&logo=GitHub&logoColor=00FF00&style=for-the-badge)
-
-![GitHub repo size](https://img.shields.io/github/repo-size/bpplaysguitar/workday-scheduler?color=0000FF&logo=GitHub&logoColor=0000FF&style=for-the-badge)
-
-![GitHub code size](https://img.shields.io/github/languages/code-size/bpplaysguitar/workday-scheduler?color=2E2B5F&logo=GitHub&logoColor=2E2B5F&style=for-the-badge)
-
-![GitHub repo stars](https://img.shields.io/github/stars/bpplaysguitar/workday-scheduler?color=8B00FF&logo=GitHub&logoColor=8B00FF&style=for-the-badge)
-
-
 ![GitHub code size](https://img.shields.io/github/languages/code-size/bpplaysguitar/workday-scheduler?color=FF0000&logo=GitHub&logoColor=FF0000&style=for-the-badge)
 
 ![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=FF7F00&logo=GitHub&logoColor=FF7F00&style=for-the-badge)
