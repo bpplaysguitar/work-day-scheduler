@@ -5,7 +5,7 @@ A scheduling web application for keeping track of events throughout the day
 See the project live here:
 https://bpplaysguitar.github.io/workday-scheduler/
 
-![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=%23FA2EF7&logo=GitHub&logoColor=%23FA2EF7)
+![GitHub followers](https://img.shields.io/github/followers/bpplaysguitar?color=%23FA2EF7&logo=GitHub&logoColor=%FF0000)
 
 ![GitHub top language](https://img.shields.io/github/languages/top/bpplaysguitar/workday-scheduler?color=%23ffb3ba&logo=GitHub&logoColor=%23ffb3ba)
 
