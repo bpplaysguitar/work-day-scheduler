@@ -1,31 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
+:root { 
+  --body:#37475a;
+  --past:#131a22;
+  --present:#fff;
+  --future:#37475a;
+  --hour:#febd69;
+  --save-btn:#febd69;
+  --save-btn-hover:hsl(34, 74%, 62%);
+  --today:#37475a;
+  --jumbotron:#fff;
+  --container:#fff;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 1;
+  background-color: var(--body);
+  color: #fff;
 }
 
-textarea {
-  display: flex;
-  background: transparent;
-  border: none;
-  resize: none;
-  color: #000000;
-  border-left: 1px solid black;
-  padding: 10px;
-  width: 80%;
-  margin: auto;
-  border: none;
-}
-
+/* top of the page */
 .jumbotron {
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: transparent;
+  background-color: var(--jumbotron);
   color: black;
   border-radius: 0;
-  border-bottom: 10px solid black;
+  border-bottom: 7px solid #131a22;
   align-items: center;
+  box-shadow: 0 0px 500px 50px #131a22;
+}
+
+.jumbotron h1 {
+  font-weight: 700;
+  text-decoration: underline var(--hour);
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin: 15px auto;
 }
 
 #currentDay {
@@ -33,10 +49,35 @@ textarea {
   margin: 1em;
   padding: 20px;
   border-radius: 20px;
-  background-color: #06aed5;
+  background-color: var(--today);
   color: #fff;
   font-weight: 600;
   box-shadow: 2px 2px 2px #000;
+}
+
+/* main content */
+.container {
+  background-color: var(--container);
+  border: 5px solid var(--past);
+  border-radius: 20px;
+  padding: 35px;
+  box-shadow: 3px 3px 3px #000;
+  margin: 60px auto;
+}
+
+textarea {
+  display: flex;
+  background: transparent;
+  border: none;
+  resize: none;
+  border-left: 1px solid black;
+  padding: 10px;
+  height: 90%;
+  width: 80%;
+  margin: auto;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 .description {
@@ -47,68 +88,74 @@ textarea {
   display: flex;
   text-align: center;
   border-radius: 15px;
-  /* stock css end  */
 }
 
 .row {
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  /* stock css end */
   align-items: center;
-  background-color: #ddd;
   width: 90%;
   margin-left: auto;
   justify-content: center;
 }
 
 .hour {
-  background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  border-top: 1px solid #000000;
+  border-left:3px solid var(--past);
+  border-right:3px solid var(--future);
   width: 15%;
   margin-right: auto;
+  background-color: var(--hour);
+  height: 100%;
 }
 
-.past {
-  background-color: #d3d3d3;
-  color: white;
-}
-
-.present {
-  background-color: #ff6961;
-  color: white;
-}
-
-.future {
-  background-color: #77dd77;
-  color: white;
+.hour h5 {
+  color: #000;
+  font-weight: 700;
 }
 
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
-  color: white;
-  /* stock css end*/
-  padding: 0 40px;
+  color: #000;
+  padding: 0 30px;
   border-top: 1px solid white;
+  background-color: var(--save-btn);
 }
 
 .saveBtn:hover {
-  background-color: hsl(191, 95%, 33%);
-  transition: all 0.2s ease-in-out;
+  background-color: var(--save-btn-hover);
+  transition: all 0.2s ease;
 }
 
 .past {
-background-color: #ff6961;
+background-color: var(--past);
+color:#fff;
 }
 
-.current {
-background-color: #77dd77;
+.present {
+background-color: var(--present);
 }
 
 .future {
-background-color: blue;
+background-color: var(--future);
+color:#fff;
+}
+
+@media screen and (max-width:800px) {
+  textarea {
+    font-size:1.1rem;
+    width: 70%;
+  }
+
+  .hour h5 {
+    font-size: .8rem;
+  }
+
+  .saveBtn {
+   font-size: .65rem; 
+   padding: 0px 25px;
+  }
 }
