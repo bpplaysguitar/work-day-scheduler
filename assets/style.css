@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
 
+* {
+box-sizing: border-box;
+}
+
 :root { 
   --body:#37475a;
   --past:#131a22;
@@ -28,10 +32,9 @@ body {
   text-align: center;
   background-color: var(--jumbotron);
   color: black;
-  border-radius: 0;
   border-bottom: 7px solid #131a22;
   align-items: center;
-  box-shadow: 0 0px 500px 50px #131a22;
+  box-shadow: 0 0px 300px 30px #131a22;
 }
 
 .jumbotron h1 {
@@ -145,6 +148,22 @@ color:#fff;
 }
 
 @media screen and (max-width:800px) {
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+  
+  .jumbotron p {
+    font-size: 1.25rem;
+  }
+  
+  #currentDay {
+    font-size: 1.1rem;
+  }
+
+  .container {
+    width: 95%;
+  }
+  
   textarea {
     font-size:1.1rem;
     width: 70%;
