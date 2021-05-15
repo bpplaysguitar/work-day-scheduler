@@ -168,7 +168,8 @@ function renderWorkdaySchedule() {
 
 // load the most recent schedule, time block color
 renderWorkdaySchedule();
-setTimeBlockColor();
+setInterval(setTimeBlockColor(), 60000);
+
 
 // event listeners on each button save the workdaySchedule object
 saveBtn[0].addEventListener("click", function (event) {

@@ -7,7 +7,7 @@ box-sizing: border-box;
 :root { 
   --body:#37475a;
   --past:#131a22;
-  --present:#fff;
+  --present:hsl(0, 0%, 50%);
   --future:#37475a;
   --hour:#febd69;
   --save-btn:#febd69;
@@ -79,8 +79,8 @@ textarea {
   width: 80%;
   margin: auto;
   border: none;
-  color: #fff;
   font-size: 1.25rem;
+  color: #fff;
 }
 
 .description {
@@ -135,7 +135,6 @@ textarea {
 
 .past {
 background-color: var(--past);
-color:#fff;
 }
 
 .present {
@@ -144,7 +143,6 @@ background-color: var(--present);
 
 .future {
 background-color: var(--future);
-color:#fff;
 }
 
 @media screen and (max-width:800px) {
