@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 
 :root { 
-  --body:#37475a;
+  --body:#202936;
   --past:#37475a;
   --present:hsl(0, 0%, 60%);
   --future:hsl(212, 28%, 60%);
@@ -21,7 +21,7 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   line-height: 1;
-  background-color: var(--body);
+  background-color: var(--past);
   color: #fff;
 }
 
@@ -32,9 +32,9 @@ body {
   text-align: center;
   background-color: var(--jumbotron);
   color: black;
-  border-bottom: 7px solid var(--past);
+  border-bottom: 7px solid var(--body);
   align-items: center;
-  box-shadow: 0 0px 300px 100px var(--future);
+  box-shadow: 0 0px 300px 300px var(--body);
 }
 
 .jumbotron h1 {
