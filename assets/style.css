@@ -34,7 +34,7 @@ body {
   color: black;
   border-bottom: 7px solid var(--past);
   align-items: center;
-  box-shadow: 0 0px 300px 30px var(--past);
+  box-shadow: 0 0px 300px 100px var(--future);
 }
 
 .jumbotron h1 {
