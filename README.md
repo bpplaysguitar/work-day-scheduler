@@ -33,7 +33,7 @@ git clone https://github.com/bpplaysguitar/javascript-fundamentals-quiz.git,
 
 Screenshot image of the project web page
 
-![](assets/images/screenshot.jpg)
+![](assets/images/screenshot1.jpg)
 
 ## Credits
 
