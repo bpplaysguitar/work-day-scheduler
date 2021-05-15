@@ -6,9 +6,9 @@ box-sizing: border-box;
 
 :root { 
   --body:#37475a;
-  --past:#131a22;
+  --past:#37475a;
   --present:hsl(0, 0%, 60%);
-  --future:#37475a;
+  --future:hsl(212, 28%, 60%);
   --hour:#febd69;
   --save-btn:#febd69;
   --save-btn-hover:hsl(34, 74%, 62%);
@@ -32,9 +32,9 @@ body {
   text-align: center;
   background-color: var(--jumbotron);
   color: black;
-  border-bottom: 7px solid #131a22;
+  border-bottom: 7px solid var(--past);
   align-items: center;
-  box-shadow: 0 0px 300px 30px #131a22;
+  box-shadow: 0 0px 300px 30px var(--past);
 }
 
 .jumbotron h1 {
@@ -107,7 +107,6 @@ textarea {
 .hour {
   border-top: 1px solid #000000;
   border-left:3px solid var(--past);
-  border-right:3px solid var(--future);
   width: 15%;
   margin-right: auto;
   background-color: var(--hour);
