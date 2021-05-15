@@ -23,7 +23,7 @@ This workday scheduler taught me how tricky it can be to learn to use local stor
 3. You have Git and Github Desktop installed (https://git-scm.com/downloads, https://desktop.github.com/) and have registered for an account,
 
 4. Clone this repository:
-git clone https://github.com/bpplaysguitar/javascript-fundamentals-quiz.git,
+git clone https://github.com/bpplaysguitar/workday-scheduler.git,
 
 5. Create your own repository for the files on GitHub.
 
