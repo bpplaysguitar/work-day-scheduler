@@ -23,6 +23,14 @@ https://bpplaysguitar.github.io/workday-scheduler/
 This workday scheduler taught me how tricky it can be to learn to use local storage, but how useful it is once I got the hang of it. I can see a many places where I'd want to utilize this. It was also my first time working with Luxon for time, and that is a neat tool as well. I wasn't aware anything like that even existed. Also quite powerful and I'm sure I have not even scratched its surface. It was nice to see how a couple new tools could come together to build something so familiar and seemingly simple.
 
 
+## Technologies Used
+HTML <br>
+CSS <br>
+JavaScript <br>
+Local Storage <br>
+APIs
+
+
 ## Installation
 
 1. Provided that you have a code editor of your choosing installed on your system, such as VS Code (https://code.visualstudio.com/),
@@ -40,9 +48,9 @@ git clone https://github.com/bpplaysguitar/workday-scheduler.git,
 
 ## Usage
 
-Screenshot image of the project web page
+Animation of application in use
 
-![](assets/images/screenshot.jpg)
+![](assets/images/workday-scheduler.gif)
 
 ## Credits
 
